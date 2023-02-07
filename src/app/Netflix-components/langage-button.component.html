@@ -1,9 +1,12 @@
 <button (click)="isOpen = !isOpen">
-{{ selectedLanguage }}
-<span [ngClass]="{'arrow-up': isOpen, 'arrow-down': !isOpen}"><img src=""></span>
+  {{ selectedLanguage }}
+  <span [ngClass]="{ 'arrow-up': isOpen, 'arrow-down': !isOpen }"
+    ><img
+      src="C:/Users/Unepa/Downloads/Kolia_world_icon_web_4aa9691b-802a-4148-beb7-1163d8015ace-removebg-preview.png"
+  /></span>
 </button>
 <ul *ngIf="isOpen">
-<li *ngFor="let language of languages" (click)="selectLanguage(language)">
-  {{ language }}
-</li>
+  <li *ngFor="let language of languages" (click)="selectLanguage(language)">
+    {{ language }}
+  </li>
 </ul>
