@@ -1,13 +1,20 @@
 button {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 120px;
+  justify-content: space-around;
+  width: 140px;
   height: 40px;
-  background-color: #333;
+  /*background-color: #333;*/
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  position: relative;
+  background-color: #333;
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #fff;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .arrow-down {
@@ -17,6 +24,7 @@ button {
   width: 0;
   height: 0;
   margin-left: 10px;
+  z-index: 6;
 }
 
 .arrow-up {
@@ -26,6 +34,7 @@ button {
   width: 0;
   height: 0;
   margin-left: 10px;
+  z-index: 6;
 }
 
 ul {
@@ -35,7 +44,12 @@ ul {
   position: absolute;
   background-color: #333;
   color: #fff;
-  width: 120px;
+  width: 140px;
+  z-index: 6;
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #fff;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 li {
@@ -44,4 +58,13 @@ li {
   font-size: 16px;
   text-align: center;
   cursor: pointer;
+}
+
+.world {
+  width: 1.6rem;
+  z-index: 6;
+}
+
+.sellng {
+  z-index: 6;
 }

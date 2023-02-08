@@ -1,0 +1,35 @@
+.input-container {
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  transition: all 0.3s;
+  
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #4285f4;
+  outline: none;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 14px;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 10px;
+  left: 2;
+  color: #ddd;
+}
+
+input[type="text"].focused::-webkit-input-placeholder {
+  transform: translateY(-20px);
+  font-size: 10px;
+  bottom: 6px;
+  color: #999;
+  
+}
