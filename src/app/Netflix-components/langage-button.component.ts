@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class LangageButtonComponent {
   isOpen = false;
-  selectedLanguage = 'English';
-  languages = ['English', 'French', 'German', 'Spanish'];
+  selectedLanguage = 'Français';
+  languages = ['Français', 'English', 'German', 'Spanish'];
 
   selectLanguage(language: string) {
     this.selectedLanguage = language;

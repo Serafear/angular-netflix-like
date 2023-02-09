@@ -1,0 +1,17 @@
+.black-bgn {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.text-second {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-video {
+  display: flex;
+  flex-direction: column;
+}
