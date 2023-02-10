@@ -4,6 +4,6 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./Netflix/Netflix.component').then((m) => m.NetflixComponent),
+      import('./Netflix-landing/Netflix.component').then((m) => m.NetflixComponent),
   },
 ];

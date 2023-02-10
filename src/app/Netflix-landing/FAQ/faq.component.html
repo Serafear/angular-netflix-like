@@ -1,0 +1,15 @@
+<div class="faq-container">
+<h1 class="qst-title">Foire aux questions</h1>
+  <div
+    class="faq-box"
+    *ngFor="let faq of faqs"
+    [ngClass]="{ open: faq.isOpen }"
+    (click)="toggleFAQ(faq)"
+  >
+  
+    <div class="question">{{ faq.question }}</div>
+    <div class="cross" *ngIf="!faq.isOpen">+</div>
+    <div class="cross" *ngIf="faq.isOpen">&#10005;</div>
+    <div class="answer" *ngIf="faq.isOpen">{{ faq.answer }}</div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+.black-bgn {
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -1.4rem;
+  height: 35rem;
+  gap: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -1.4rem;
+}
+
+.text-second {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.segment-title {
+  font-size: 3rem;
+  margin-bottom: -0.4rem;
+  width: 35rem;
+}
+.segment-p {
+  font-size: 1.35rem;
+  margin-bottom: 4rem;
+}
+
+.img-video {
+  display: flex;
+  flex-direction: column;
+}
+
+.tv {
+  width: 90%;
+  position: relative;
+  z-index: 2;
+}
+.video {
+  width: 22%;
+  position: absolute;
+  margin-top: -22rem;
+  margin-left: 5rem;
+  z-index: 1;
+}
+
+.stranger-things-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-img {
+  height: 20rem;
+}
+
+.under-phone-segment {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  border: 2px solid #232323;
+  border-radius: 1rem;
+  height: 7rem;
+  width: 20rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.poster {
+  width: 20%;
+  height: 80%;
+  margin-left: 1rem;
+}
+
+.ins-box-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+.upper-text {
+  font-size: larger;
+  font-weight: 800;
+}
+.lower-text {
+  color: blue;
+  font-size: large;
+  width: 50%;
+}
+
+.giff-background {
+  background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif');
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+}

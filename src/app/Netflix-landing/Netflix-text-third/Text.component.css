@@ -1,0 +1,45 @@
+.black-bgn {
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -1.4rem;
+  height: 35rem;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -1.4rem;
+}
+
+.text-second {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.segment-title {
+  font-size: 3rem;
+  margin-bottom: -0.4rem;
+}
+.segment-p {
+  font-size: 1.35rem;
+  margin-bottom: 4rem;
+}
+
+.img-video {
+  display: flex;
+  flex-direction: column;
+}
+
+.tv {
+  width: 85%;
+  position: relative;
+  z-index: 2;
+}
+.video {
+  width: 18%;
+  position: absolute;
+  margin-top: -22rem;
+  margin-left: 6rem;
+  z-index: 1;
+}
