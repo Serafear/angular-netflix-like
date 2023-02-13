@@ -38,13 +38,17 @@ export class InputBoxComponent implements OnInit {
   onInput(event) {
     const input = event.target;
     input.style.borderBottom = '2px solid';
-    if (this.email.invalid && (this.email.dirty || this.email.touched)) {
-    /*input.style.borderBottom = '2px solid red';*/
-    input.style.border ='2px solid red';
-    } else {
-    input.style.border = '2px solid green';
+    if (this.email.value) {
+      if (this.email.invalid && (this.email.dirty || this.email.touched)) {
+        input.style.border = '2px solid red';
+      } else {
+        input.style.border = '2px solid green';
+      }
     }
+    else {
+      input.style.border = '2px solid #ddd';
     }
+  }
 
   get email() {
     return this.form.get('email');

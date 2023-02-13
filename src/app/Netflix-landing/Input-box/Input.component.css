@@ -2,6 +2,12 @@
   position: relative;
 }
 
+#emailInput {
+  background-color: #333;
+  background: rgba(0, 0, 0, 0.4);
+  
+}
+
 input[type='text'] {
   padding: 10px;
   font-size: 16px;
@@ -10,6 +16,7 @@ input[type='text'] {
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   transition: all 0.3s;
+  color: white;
 }
 
 input[type='text']:focus {
@@ -17,11 +24,18 @@ input[type='text']:focus {
   outline: none;
 }
 
-.ng-invalid.ng-touched:not(form) {
+/*.ng-invalid.ng-touched:not(form) {
   border: 2px solid red;
 }
 input[type='text'].ng-invalid.ng-touched {
   border: 2px solid red;
+}*/
+
+.ng-invalid.ng-value:not(form) {
+  border-bottom: 2px solid red;
+}
+input[type='text'].ng-invalid.ng-value {
+  border-bottom: 2px solid red;
 }
 
 input.ng-valid.ng-touched {
@@ -36,7 +50,7 @@ label {
   transition: all 0.3s;
   position: absolute;
   bottom: 10px;
-  padding-left: 9px;
+  padding-left: 12px;
   color: #ddd;
   cursor: text;
   pointer-events: none;
@@ -45,7 +59,7 @@ label {
 label.focused {
   transform: translateY(-18px);
   font-size: 10px;
-  color: #999;
+  color: #ddd;
 }
 
 .error {
@@ -54,9 +68,9 @@ label.focused {
   margin-top: 5px;
 }
 
-input[type='text'].ng-invalid.ng-touched {
+/*input[type='text'].ng-invalid.ng-touched {
   border-bottom: 2px solid red;
-}
+}*/
 
 .input-form {
   display: flex;

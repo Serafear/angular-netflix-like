@@ -14,7 +14,7 @@
   
   <button (click)="goToNextPage()" class="input-btn">Commencer &nbsp;▶</button>
 </form>
-<div *ngIf="email.invalid && (email.dirty || email.touched)">
+<div *ngIf="email.value && email.invalid && (email.dirty || email.touched)">
 <!--<div *ngIf="email.errors.required">
 Email required
 </div>  if i want the error to show even if the box is empty-->
