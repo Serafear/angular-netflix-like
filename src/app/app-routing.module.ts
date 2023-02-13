@@ -1,9 +1,13 @@
 import { Routes } from '@angular/router';
+import { NetflixComponent } from './Netflix-landing/Netflix.component';
+import { PageOneComponent } from './WhantToKnowMore/Page1/pageOne.component';
 
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () =>
-      import('./Netflix-landing/Netflix.component').then((m) => m.NetflixComponent),
+    children: [
+      { path: '', component: NetflixComponent },
+      { path: 'signup', component: PageOneComponent },
+    ],
   },
 ];

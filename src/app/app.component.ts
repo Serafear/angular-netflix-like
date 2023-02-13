@@ -1,6 +1,6 @@
 import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { NetflixComponent } from './Netflix-landing/Netflix.component';
 import { CommonModule } from '@angular/common';
 import { LangageButtonComponent } from './Netflix-components/langage-button.component';
@@ -26,5 +26,7 @@ import {LandingFooterComponent} from './Netflix-landing/Landing-footer/footer.co
 })
 export class AppComponent {
   title = 'angular-standalone-components-example';
+  constructor(private router: Router) {}
+  
 
 }
