@@ -5,6 +5,8 @@
   background-color: black;
   margin-top: -1.4rem;
   width: 100%;
+  padding-bottom: 3rem;
+  margin-bottom: -1.4rem;
 }
 
 .qst-title {
@@ -44,9 +46,22 @@
 
 .cross {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 20px;
+  right: -30px;
+  top: -20px;
+}
+.cross-img {
+  width: 7rem;
+  height: 9rem;
+}
+
+.plus {
+  position: absolute;
+  right: 30px;
+  top: -20px;
+}
+.plus-img {
+  width: 7rem;
+  height: 9rem;
 }
 
 .answer {
@@ -90,5 +105,24 @@
 /*this class is in answer3 for en savoir plus in faq.component.ts*/
 .underline { 
   text-decoration: underline;
-  color: blue;
+  cursor: pointer;
+  color: white;
+}
+
+.pitch {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  width: 60rem;
+  text-align: center;
+}
+
+.test #emailInput {
+  background-color: black;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.test input[type='text'] {
+  color: #ddd;
 }

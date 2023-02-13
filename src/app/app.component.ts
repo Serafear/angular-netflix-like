@@ -12,6 +12,7 @@ import {NetflixThirdTextComponent} from './Netflix-landing/Netflix-text-third/Te
 import {NetflixFourthTextComponent} from './Netflix-landing/Netflix-text-fourth/Text.component';
 import {NetflixFifthTextComponent} from './Netflix-landing/Netflix-text-fifth/Text.component';
 import {FaqComponent} from './Netflix-landing/FAQ/faq.component';
+import {LandingFooterComponent} from './Netflix-landing/Landing-footer/footer.component';
 
 
 
@@ -21,7 +22,7 @@ import {FaqComponent} from './Netflix-landing/FAQ/faq.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   standalone: true,
-  imports: [RouterModule, NetflixComponent, CommonModule, LangageButtonComponent, TextTopComponent, FormsModule, DarkLineComponent, NetflixSecondTextComponent, NetflixThirdTextComponent, NetflixFourthTextComponent, NetflixFifthTextComponent, FaqComponent],
+  imports: [RouterModule, NetflixComponent, CommonModule, LangageButtonComponent, TextTopComponent, FormsModule, DarkLineComponent, NetflixSecondTextComponent, NetflixThirdTextComponent, NetflixFourthTextComponent, NetflixFifthTextComponent, FaqComponent, LandingFooterComponent],
 })
 export class AppComponent {
   title = 'angular-standalone-components-example';

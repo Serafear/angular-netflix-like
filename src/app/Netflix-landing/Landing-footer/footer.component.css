@@ -1,0 +1,55 @@
+footer {
+  background-color: black;
+  color: #B3B3AD;
+  margin-top: -1.4rem;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+}
+.footer-container {
+  width: 70%;
+  padding-top: 2rem;
+}
+
+.call-number {
+  text-align: start;
+  margin-left: 9.2rem;
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.nbr-underline {
+  text-decoration: underline;
+}
+
+.ul-container {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  gap: 15rem;
+}
+
+.footer-list {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item {
+  display: block;
+  padding: 10px;
+  text-decoration: underline;
+  margin-top: -0.5rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+ng-container {
+  margin-right: 10rem;
+}
+.customLang button {
+  margin-right: 10rem;
+  color: red;
+  background-color: red;
+}

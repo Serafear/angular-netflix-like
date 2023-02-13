@@ -1,0 +1,42 @@
+<footer class="test">
+  <div class="footer-container">
+    <div class="call-number">
+      <span>Des questions ? Appelez le</span>
+      <span class="nbr-underline">(+33) 0805-543-xxx</span>
+    </div>
+    <div class="ul-container">
+      <ul class="footer-list">
+        <li class="footer-item">FAQ</li>
+        <li class="footer-item">Compte</li>
+        <li class="footer-item">Recrutement</li>
+        <li class="footer-item">Modes de lecture</li>
+        <li class="footer-item">Préférences de cookies</li>
+        <li class="footer-item">Test de vitesse</li>
+        <li class="footer-item">Seulement sur Netflix</li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-item">Conditions des cartes cadeaux</li>
+        <li class="footer-item">Presse</li>
+        <li class="footer-item">Utiliser des cartes cadeaux</li>
+        <li class="footer-item">Conditions d'utilisation</li>
+        <li class="footer-item">Mentions légales</li>
+        <li class="footer-item">Garantie légale</li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-item">Centre d'aide</li>
+        <li class="footer-item">Relation investisseurs</li>
+        <li class="footer-item">Acheter des cartes cadeaux</li>
+        <li class="footer-item">Confidentialité</li>
+        <li class="footer-item">Nous contacter</li>
+        <li class="footer-item">Informations légales</li>
+      </ul>
+    </div>
+    <ng-container *ngTemplateOutlet="customLangBox"></ng-container>
+    <p>Netflix France</p>
+  </div>
+</footer>
+
+
+<ng-template #customLangBox>
+<app-langbtn class="customLang"></app-langbtn>
+</ng-template>

@@ -8,11 +8,18 @@
   >
     <div class="qst-border" (click)="toggleFAQ(faq)">
       <div class="question">{{ faq.question }}</div>
-      <div class="cross" *ngIf="!faq.isOpen">+</div>
-      <div class="cross" *ngIf="faq.isOpen">&#10005;</div>
+      <div class="plus" *ngIf="!faq.isOpen"><img src="https://media.discordapp.net/attachments/1072454364104491049/1073983102835236884/plus.png" alt="" class="plus-img"></div>
+      <div class="cross" *ngIf="faq.isOpen"><img src="https://media.discordapp.net/attachments/1072454364104491049/1073983141720637470/X.png" alt="" class="cross-img"></div>
     </div>
 
     <div class="answer" *ngIf="faq.isOpen" [innerHTML]="faq.answer"></div>
-    <div class="answerSecond" *ngIf="faq.isOpen">{{ faq.answerSecond }}</div>
+    <div class="answerSecond" *ngIf="faq.answerSecond && faq.isOpen">{{ faq.answerSecond }}</div>
   </div>
+  <span class="pitch">Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement</span>
+  <ng-container *ngTemplateOutlet="customInputBox" ></ng-container>
 </div>
+<app-darkline></app-darkline>
+
+<ng-template #customInputBox>
+<app-input-box style="color: white;" class="test"></app-input-box> <!--i let the style as an example of what is possible-->
+</ng-template>
