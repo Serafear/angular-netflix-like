@@ -1,11 +1,11 @@
 .offer {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 .offer-header {
+  margin-right: 1rem;
   background-color: #E50914;
   border: 2px solid white;
   color: white;
@@ -16,9 +16,27 @@
 }
 
 .offer-text {
-  font-size: 1.2rem
+  margin-right: 1rem;
+  font-size: 1.2rem;
 }
 .price {
   font-weight: 800;
   font-size: 1.5rem;
+}
+
+.blue-text-arrow {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 0.1rem;
+}
+.wtokm {
+  font-size: 1.2rem;
+  color: blue;
+  font-weight: 600;
+}
+.arrow {
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.5rem;
 }
