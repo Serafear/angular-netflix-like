@@ -1,3 +1,6 @@
+.full-netflix-landing {
+  margin-top: 0.5rem;
+}
 
 .all-pages {
   width: 100%;
@@ -31,8 +34,8 @@
   background-size: cover;
   background-position: center;
   filter: brightness(0.5);
-  height: 45rem;
-  margin-top: 2.5rem;
+  height: 46rem;
+  margin-top: 3rem;
   width: 100%;
 }
 .default-ltr-cache-ag96qb {
