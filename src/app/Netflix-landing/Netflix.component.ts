@@ -10,7 +10,11 @@ import { Router, RouterModule } from '@angular/router';
   imports: [RouterModule],
 })
 export class NetflixComponent implements OnInit {
-  cconstructor(private router: Router){}
+
+  constructor(private router: Router){}
+  goToSignUp() {
+    this.router.navigate(['/signup'])
+  }
 
   ngOnInit(): void {}
   

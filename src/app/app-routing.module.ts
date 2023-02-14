@@ -1,12 +1,17 @@
 import { Routes } from '@angular/router';
-import { NetflixComponent } from './Netflix-landing/Netflix.component';
 import { PageOneComponent } from './WhantToKnowMore/Page1/pageOne.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
   {
     path: '',
+    redirectTo: 'fr',
+    pathMatch: 'full'
+  },
+  {
+    path: 'fr',
     children: [
-      { path: '', component: NetflixComponent },
+      { path: '', component: AppComponent },
       { path: 'signup', component: PageOneComponent },
     ],
   },
