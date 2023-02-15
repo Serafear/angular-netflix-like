@@ -27,6 +27,5 @@ import {LandingFooterComponent} from './Netflix-landing/Landing-footer/footer.co
 export class AppComponent {
   title = 'angular-standalone-components-example';
   constructor(private router: Router) {}
-  
 
 }
