@@ -19,8 +19,8 @@ import {LandingFooterComponent} from '../../Netflix-landing/Landing-footer/foote
 
 @Component({
   selector: 'app-main-fr',
-  templateUrl: './fr.component.html',
-  styleUrls: ['./fr.component.css'],
+  templateUrl: './main-landingfr.component.html',
+  styleUrls: ['./main-landingfr.component.css'],
   standalone: true,
   imports: [RouterModule, NetflixComponent, CommonModule, LangageButtonComponent, TextTopComponent, FormsModule, DarkLineComponent, NetflixSecondTextComponent, NetflixThirdTextComponent, NetflixFourthTextComponent, NetflixFifthTextComponent, FaqComponent, LandingFooterComponent],
 })

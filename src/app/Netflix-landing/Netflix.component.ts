@@ -13,7 +13,7 @@ export class NetflixComponent implements OnInit {
 
   constructor(private router: Router){}
   goToSignUp() {
-    this.router.navigate(['/signup'])
+    this.router.navigate(['fr/signup'])
   }
 
   ngOnInit(): void {}
