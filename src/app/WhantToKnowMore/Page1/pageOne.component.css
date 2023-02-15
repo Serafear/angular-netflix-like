@@ -1,0 +1,73 @@
+.full-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ flex-direction: column;
+ gap: 7.5rem;
+}
+
+.top-band {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #E6E6E6;
+  height: 5rem;
+  gap: 70%;
+}
+
+.netflix-logo {
+  width: 12rem;
+  height: auto;
+  fill: red;
+}
+.login {
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-img {
+  width: 3.3rem;
+}
+.nbr {
+  font-weight: 600;
+}
+.stages-nbr {
+  margin-bottom: -1.5rem;
+}
+.offer-title {
+  font-size: 2.3rem;
+  text-align: center;
+  width: 50%;
+  margin-bottom: -0.5rem;
+}
+
+.checkmark-list {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+.checkmark-content {
+  display: flex;
+  font-size: 1.3rem;
+  gap: 0.5rem;
+}
+.content-p {
+  width: 17rem;
+  margin-bottom: -0.5rem;
+}
+.checkmark-icon {
+  width: 2rem;
+  margin-top: 0.7rem;
+}
+
