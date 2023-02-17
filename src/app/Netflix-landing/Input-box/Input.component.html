@@ -11,13 +11,11 @@
     <label for="emailInput">Email address</label>
   </div>
 
-  
   <button (click)="goToNextPage()" class="input-btn">Commencer &nbsp;▶</button>
 </form>
 <div *ngIf="email.value && email.invalid && (email.dirty || email.touched)">
-<!--<div *ngIf="email.errors.required">
+  <!--<div *ngIf="email.errors.required">
 Email required
 </div>  if i want the error to show even if the box is empty-->
-<div *ngIf="email.errors.email">Enter a valid email</div>
+  <div *ngIf="email.errors.email">Enter a valid email</div>
 </div>
-

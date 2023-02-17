@@ -1,3 +1,35 @@
 .gray-footer {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
+  color: #8d8d8d;
+  padding-left: 10%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-number {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.ul-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: -2.5rem;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-item {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.customLang button {
+  background-color: white;
 }
