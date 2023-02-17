@@ -5,27 +5,7 @@
  flex-direction: column;
  gap: 7.5rem;
  width: 100%;
-}
-
-.top-band {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid #E6E6E6;
-  height: 5rem;
-  gap: 70%;
-}
-
-.netflix-logo {
-  width: 12rem;
-  height: auto;
-  fill: red;
-}
-.login {
-  font-size: x-large;
-  font-weight: 800;
+ margin-top: 7.5rem;
 }
 
 .page-body {
