@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: #ddd;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.fourth-column {
+  display: none;
+}
+
+.open {
+  display: block;
+  grid-template-columns: repeat(4, 1fr);
+}
