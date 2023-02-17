@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { WtkmFooterComponent } from '../Wtkm-Footer/footer2.component'
+import { WtkmFooterComponent } from '../Wtkm-Footer/footer.component'
 
 @Component({
   selector: 'app-pageOne',

@@ -1,0 +1,67 @@
+/*if i use the tag footer instead of the class .gray-footer, footer will take the
+css of the footer in Landing-footer. In landing-footer i used the class .test
+now the css load properly because there are no common ground*/
+.gray-footer {
+  background-color: #f3f3f3;
+  color: #8d8d8d;
+  display: flex;
+}
+
+.footer-container-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.call-number-2 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.ul-container-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: -2.5rem;
+}
+.footer-list-2 {
+  list-style: none;
+}
+.footer-item-2 {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/*.customLang-2 button {
+  background-color: white !important;
+}*/
+.customLang-2 #btn-test {
+background-color: white;
+color: #737373;
+}
+.customLang-2 #ng-test.arrow-down {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  z-index: 6;
+}
+.customLang-2 #ng-test.arrow-up {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  z-index: 6;
+}
+.customLang-2 #lgn-btn-id {
+  margin-top: -12.5rem;
+  background-color: white;
+  border: 0.5px solid black;
+  color: black;
+}

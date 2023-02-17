@@ -1,4 +1,4 @@
-<button (click)="isOpen = !isOpen">
+<button (click)="isOpen = !isOpen" id="btn-test">
   <img
     class="world"
     [src]="
@@ -8,9 +8,9 @@
   />
   <div class="sellng"> {{ selectedLanguage }}</div>
  
-  <span [ngClass]="{ 'arrow-up': isOpen, 'arrow-down': !isOpen }"> </span>
+  <span id="ng-test" [ngClass]="{ 'arrow-up': isOpen, 'arrow-down': !isOpen }"> </span>
 </button>
-<ul *ngIf="isOpen">
+<ul *ngIf="isOpen" id="lgn-btn-id">
   <li *ngFor="let language of languages" (click)="selectLanguage(language)">
     {{ language }}
   </li>

@@ -4,8 +4,8 @@ import { LangageButtonComponent } from '../../Netflix-components/langage-button.
 
 @Component({
   selector: 'app-wtkm-footer',
-  templateUrl: './footer2.component.html',
-  styleUrls: ['./footer2.component.css'],
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css'],
   standalone: true,
   imports: [LangageButtonComponent, CommonModule],
   encapsulation: ViewEncapsulation.None /*this allow me to use ng-container*/,
