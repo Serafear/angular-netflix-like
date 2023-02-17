@@ -1,35 +1,34 @@
+/*if i use the tag footer instead of the class .gray-footer, footer will take the
+css of the footer in Landing-footer. In landing-footer i used the class .test
+now the css load properly because there are no common ground*/
 .gray-footer {
   background-color: #f3f3f3;
   color: #8d8d8d;
-  padding-left: 10%;
+  display: flex;
 }
 
-.footer-container {
+.footer-container-2 {
   display: flex;
   flex-direction: column;
 }
 
-.call-number {
+.call-number-2 {
   margin-top: 2rem;
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
 }
 
-.ul-container {
+.ul-container-2 {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   margin-left: -2.5rem;
 }
-.footer-list {
+.footer-list-2 {
   list-style: none;
 }
-.footer-item {
+.footer-item-2 {
   margin-bottom: 0.5rem;
   cursor: pointer;
   width: fit-content;
-}
-
-.customLang button {
-  background-color: white;
 }

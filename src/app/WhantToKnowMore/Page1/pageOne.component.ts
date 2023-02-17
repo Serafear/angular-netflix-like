@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { WtkmFooterComponent } from '../Wtkm-Footer/footer.component'
+import { Router, RouterModule } from '@angular/router';
+import { WtkmFooterComponent } from '../Wtkm-Footer/footer2.component'
 
 @Component({
   selector: 'app-pageOne',
@@ -10,7 +10,7 @@ import { WtkmFooterComponent } from '../Wtkm-Footer/footer.component'
   imports: [RouterModule, WtkmFooterComponent],
 })
 export class PageOneComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 }
