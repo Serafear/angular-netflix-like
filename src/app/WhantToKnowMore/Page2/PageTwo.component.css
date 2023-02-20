@@ -22,11 +22,11 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  gap: 4rem;
+  gap: 2.5rem;
   color: white;
   background-color: white;
 }
-.offer-1, .offer-3, .offer-4 {
+.offer-1, .offer-3, .offer-2, .offer-4 {
   background-color: #EF6B72;
   height: 8rem;
   width: 8rem;
@@ -54,12 +54,16 @@ align-items: center;
 font-size: larger;
 line-height: 1.5rem;
 }
+.offer-2 .text {
+  font-size: larger;
+line-height: 1.5rem;
+}
 
 .extra-col {
   display: none;
 }
 
 .visible {
-  display: block;
+  display: flex;
 }
 
