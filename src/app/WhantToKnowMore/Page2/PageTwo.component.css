@@ -68,6 +68,14 @@ line-height: 1.5rem;
   background-color: white;
   border-bottom: 0.1rem solid #737377;
 }
+.detail-offer-no {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 2.5rem;
+  color: #737377;
+  background-color: white;
+}
 .detail-offer-1 {
   flex: 1; /* flex 1 will take the available space*/
 }
@@ -97,6 +105,29 @@ line-height: 1.5rem;
   line-height: 1rem;
   width: 95%;
 }
+
+
+.wrng-1 {
+  background-color: #F3F3F3;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  line-height: normal;
+}
+.lock-img {
+  margin-left: 1rem;
+}
+.small-text {
+  font-size: 0.9rem;
+  width: 90%;
+  color: #6E727B;
+}
+.link-wtkm-2 {
+  color: #0071EB;
+}
+
 
 .extra-col {
   display: none;
