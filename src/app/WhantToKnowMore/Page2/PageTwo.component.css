@@ -80,9 +80,22 @@ line-height: 1.5rem;
 .detail-text {
   font-size: larger;
   font-weight: 600;
+  line-height: 1rem;
 }
 .detail-offer-5 {
   color: #E50914;
+}
+.detail-text-long {
+  font-size: larger;
+  font-weight: 600;
+  line-height: 1rem;
+  width: 85%;
+}
+.detail-text-long-2 {
+  font-size: larger;
+  font-weight: 600;
+  line-height: 1rem;
+  width: 95%;
 }
 
 .extra-col {
