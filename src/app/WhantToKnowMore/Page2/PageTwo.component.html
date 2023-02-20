@@ -124,5 +124,5 @@
       6
     </div>
   </div>
-  <button (click)="toggleExtraCol()">Toggle extra column</button>
+  <button *ngIf="!isExtraColVisible" (click)="toggleExtraCol()">Toggle extra column</button>
 </div>
