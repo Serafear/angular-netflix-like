@@ -8,16 +8,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  height: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-item {
-  width: 100%;
-  height: 50px;
+  width: 50%;
   background-color: gray;
-  border: 1px solid black;
-  box-sizing: border-box;
-  text-align: center;
   line-height: 50px;
 }
 
@@ -25,6 +22,37 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
+  gap: 4rem;
+  color: white;
+  background-color: white;
+}
+.offer-1, .offer-3, .offer-4 {
+  background-color: #EF6B72;
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-4 {
+  background-color: #E50914;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #E50914;
+}
+.box-arrow {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.text {
+font-size: larger;
+line-height: 1.5rem;
 }
 
 .extra-col {
