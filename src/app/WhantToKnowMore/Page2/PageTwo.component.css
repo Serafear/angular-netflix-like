@@ -59,6 +59,32 @@ line-height: 1.5rem;
 line-height: 1.5rem;
 }
 
+.detail-offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 2.5rem;
+  color: #737377;
+  background-color: white;
+  border-bottom: 0.1rem solid #737377;
+}
+.detail-offer-1 {
+  flex: 1; /* flex 1 will take the available space*/
+}
+.detail-offer-2, .detail-offer-3, .detail-offer-4, .detail-offer-5 {
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-text {
+  font-size: larger;
+  font-weight: 600;
+}
+.detail-offer-5 {
+  color: #E50914;
+}
+
 .extra-col {
   display: none;
 }

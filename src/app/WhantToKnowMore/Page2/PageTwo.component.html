@@ -76,13 +76,34 @@
         </div>
       </div>
     </div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
-    <div class="flex-item">4</div>
-    <div class="flex-item extra-col" [ngClass]="{ visible: isExtraColVisible }">
+    <div class="flex-item">
+      <div class="detail-offer">
+        <span class="detail-offer-1"
+          ><p class="detail-text">Abonnement mensuel</p></span
+        >
+        <span class="detail-offer-2"><p class="detail-text">5.99</p></span>
+        <span class="detail-offer-3" *ngIf="isExtraColVisible"
+          ><p class="detail-text">8.99</p></span>
+        <span class="detail-offer-4"><p class="detail-text">13.49</p></span>
+        <span class="detail-offer-5"><p class="detail-text">17.99</p></span>
+      </div>
+    </div>
+    <div class="flex-item">
+      <div class="detail-offer"></div>
+      3
+    </div>
+    <div class="flex-item">
+      <div class="detail-offer"></div>
+      4
+    </div>
+    <div class="flex-item">
+      <div class="detail-offer"></div>
       5
     </div>
-    <div class="flex-item">6</div>
+    <div class="flex-item">
+      <div class="detail-offer"></div>
+      6
+    </div>
   </div>
   <button (click)="toggleExtraCol()">Toggle extra column</button>
 </div>
