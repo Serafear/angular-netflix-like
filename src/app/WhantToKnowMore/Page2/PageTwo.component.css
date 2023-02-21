@@ -14,7 +14,6 @@
 
 .flex-item {
   width: 50%;
-  background-color: gray;
   line-height: 50px;
 }
 
@@ -107,6 +106,9 @@ line-height: 1.5rem;
 }
 
 
+.debut-warning {
+  background-color: white;
+}
 .wrng-1 {
   background-color: #F3F3F3;
   display: flex;
@@ -119,10 +121,11 @@ line-height: 1.5rem;
 .lock-img {
   margin-left: 1rem;
 }
-.small-text {
+.small-text, .small-text-2 {
   font-size: 0.9rem;
   width: 90%;
   color: #6E727B;
+  line-height: normal;
 }
 .link-wtkm-2 {
   color: #0071EB;
