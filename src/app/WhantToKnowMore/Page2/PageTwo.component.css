@@ -105,6 +105,15 @@ line-height: 1.5rem;
   width: 95%;
 }
 
+.offer-btn {
+  margin-left: 45%;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #E5E5E5;
+}
+
 
 .debut-warning {
   background-color: white;
@@ -127,10 +136,21 @@ line-height: 1.5rem;
   color: #6E727B;
   line-height: normal;
 }
-.link-wtkm-2 {
+.link-wtkm-2, .link-conf, .link-conditions {
   color: #0071EB;
 }
+.last-text {
+  margin-bottom: 2rem;
+}
 
+.nextbtn {
+  background-color: red;
+  color: white;
+  font-size: x-large;
+  padding: 1rem 9rem 1rem 9rem;
+  border: none;
+  margin-bottom: 7rem;
+}
 
 .extra-col {
   display: none;
