@@ -58,6 +58,7 @@
   gap: 2.5rem;
   color: white;
   background-color: white;
+  position: relative;
 }
 .offer-1, .offer-3, .offer-2, .offer-4 {
   background-color: #EF6B72;
@@ -197,3 +198,8 @@ line-height: 1.5rem;
   display: flex;
 }
 
+
+.Offers.fixed {
+  position: fixed;
+  top: 1rem;
+}
