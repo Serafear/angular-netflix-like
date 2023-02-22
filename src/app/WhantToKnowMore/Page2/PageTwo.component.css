@@ -1,6 +1,40 @@
 
+.stages-title-container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+.stages-nbr-2 {
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+}
+.nbr-2 {
+  font-weight: 600;
+}
+.page-2-title {
+  margin-bottom: -2rem;
+}
+
+.checkmark-container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.checkmark-list {
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  font-size: x-large;
+  margin-right: 5rem;
+}
+.checkmark-content {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: -2rem;
+}
 .checkmark-icon {
-  width: 1rem;
+  width: 1.5rem;
 }
 
 .flex-container {
@@ -113,6 +147,7 @@ line-height: 1.5rem;
   border-radius: 5px;
   background-color: #E5E5E5;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 
@@ -151,6 +186,7 @@ line-height: 1.5rem;
   padding: 1rem 9rem 1rem 9rem;
   border: none;
   margin-bottom: 7rem;
+  cursor: pointer;
 }
 
 .extra-col {
