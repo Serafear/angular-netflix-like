@@ -1,5 +1,8 @@
 <app-topBand></app-topBand>
 <div class="all-page-2">
+  <button (click)="animateDiv()" [@scaleDiv]="divState">Animate Div</button>
+
+<div [@scaleDivTrigger]="divState" class="animated-div"></div>
   <div class="stages-title-container">
     <p class="stages-nbr-2">
       Étape <span class="nbr-2">1</span> sur <span class="nbr-2">3</span>
@@ -60,8 +63,8 @@
   </div>
   <div class="flex-container">
     <div class="flex-item">
-      <span class="fixed-p" [ngClass]="{ 'scroll-down': isScrollingDown }"></span>
-      <div class="Offers" [ngClass]="{ 'fixed': isFixed }">
+      <span class="fixed-p" ></span>
+      <div class="Offers" [ngClass]="{ 'fixed': isFixed }" [@scrollTrigger]>
         <span class="offer-1"
           ><p class="text">Essentiel <br />avec pub</p></span
         >

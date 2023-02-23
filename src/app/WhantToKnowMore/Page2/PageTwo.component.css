@@ -207,19 +207,11 @@ line-height: 1.5rem;
   right: 25%; /* or adjust this value based on your layout */
   width: 100%;
 }
-.scroll-down {
-  animation-name: scrollDown;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
 
-@keyframes scrollDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0.1rem); /* change this value to adjust the scroll speed */
-  }
+.animated-div {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
 }
 
 
