@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   display: grid;
+  margin-left: -12rem;
 }
 .stages-nbr-2 {
   margin-top: 2rem;
@@ -14,6 +15,7 @@
 }
 .page-2-title {
   margin-bottom: -2rem;
+  
 }
 
 .checkmark-container {
@@ -27,11 +29,12 @@
   display: grid;
   font-size: x-large;
   margin-right: 5rem;
+  margin-left: -24rem;
 }
 .checkmark-content {
   display: flex;
   gap: 1rem;
-  margin-bottom: -2rem;
+  margin-bottom: -2.5rem;
 }
 .checkmark-icon {
   width: 1.5rem;
@@ -198,8 +201,27 @@ line-height: 1.5rem;
   display: flex;
 }
 
-
-.Offers.fixed {
+.fixed {
   position: fixed;
-  top: 1rem;
+  top: 0.5rem; /* or whatever the top value of .Offers is */
+  right: 25%; /* or adjust this value based on your layout */
+  width: 100%;
 }
+.scroll-down {
+  animation-name: scrollDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0.1rem); /* change this value to adjust the scroll speed */
+  }
+}
+
+
+
+

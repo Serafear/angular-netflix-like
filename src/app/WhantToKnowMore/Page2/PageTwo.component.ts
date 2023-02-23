@@ -15,7 +15,9 @@ import { CommonModule } from '@angular/common';
 export class PageTwoComponent implements OnInit {
   /*constructor(private router: Router) {}*/
 
-  ngOnInit(): void { this.offersElement = this.el.nativeElement.querySelector('.Offers');}
+  ngOnInit(): void {
+    this.offersElement = this.el.nativeElement.querySelector('.Offers');
+  }
   isExtraColVisible = false;
 
   toggleExtraCol() {
@@ -26,14 +28,21 @@ export class PageTwoComponent implements OnInit {
   private offersElement: HTMLElement;
   constructor(private router: Router, private el: ElementRef) {}
 
+  public isScrollingDown: boolean = false;
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const distanceFromTop = this.offersElement.getBoundingClientRect().top;
-
-    if (distanceFromTop < 16) { // 1rem = 16px
-      this.offersElement.classList.add('fixed');
-    } else {
-      this.offersElement.classList.remove('fixed');
+    const contentP = this.el.nativeElement.querySelector('.fixed-p');
+    const contentPPosition = contentP.getBoundingClientRect().bottom;
+    if (contentPPosition < 0) {
+      this.isFixed = true;
+      this.isScrollingDown = true;
+    } else if (
+      contentPPosition >=
+      1.1 * parseFloat(getComputedStyle(document.documentElement).fontSize)
+    ) {
+      this.isFixed = false;
+      this.isScrollingDown = false;
     }
   }
 }

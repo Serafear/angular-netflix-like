@@ -60,7 +60,8 @@
   </div>
   <div class="flex-container">
     <div class="flex-item">
-      <div class="Offers" >
+      <span class="fixed-p" [ngClass]="{ 'scroll-down': isScrollingDown }"></span>
+      <div class="Offers" [ngClass]="{ 'fixed': isFixed }">
         <span class="offer-1"
           ><p class="text">Essentiel <br />avec pub</p></span
         >
