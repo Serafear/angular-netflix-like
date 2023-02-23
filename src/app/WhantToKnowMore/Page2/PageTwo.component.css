@@ -15,7 +15,6 @@
 }
 .page-2-title {
   margin-bottom: -2rem;
-  
 }
 
 .checkmark-container {
@@ -61,7 +60,10 @@
   gap: 2.5rem;
   color: white;
   background-color: white;
-  position: relative;
+  position: sticky;
+  top: 0px;
+  width: 75%;
+  
 }
 .offer-1, .offer-3, .offer-2, .offer-4 {
   background-color: #EF6B72;
@@ -153,7 +155,9 @@ line-height: 1.5rem;
   margin-bottom: 1rem;
   cursor: pointer;
 }
-
+.space {
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
 
 .debut-warning {
   background-color: white;
@@ -200,20 +204,5 @@ line-height: 1.5rem;
 .visible {
   display: flex;
 }
-
-.fixed {
-  position: fixed;
-  top: 0.5rem; /* or whatever the top value of .Offers is */
-  right: 25%; /* or adjust this value based on your layout */
-  width: 100%;
-}
-
-.animated-div {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
-}
-
-
 
 

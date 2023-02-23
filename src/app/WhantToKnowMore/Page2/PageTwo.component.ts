@@ -12,24 +12,6 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   styleUrls: ['./PageTwo.component.css'],
   standalone: true,
   imports: [RouterModule, WtkmFooterComponent, TopBandComponent, CommonModule],
-  animations: [
-    trigger('scrollTrigger', [
-      transition(':enter', [
-        style({ transform: 'translateY(0)' }),
-        animate('1s ease-out', style({ transform: 'translateY(1px)' }))
-      ])
-    ]),
-    trigger('scaleDivTrigger', [
-      state('small', style({
-        transform: 'scale(1)',
-      })),
-      state('large', style({
-        transform: 'scale(1.2)',
-      })),
-      transition('small => large', animate('500ms ease-in')),
-      transition('large => small', animate('500ms ease-out')),
-    ]),
-  ]
 })
 export class PageTwoComponent implements OnInit {
   /*constructor(private router: Router) {}*/
@@ -47,27 +29,4 @@ export class PageTwoComponent implements OnInit {
   private offersElement: HTMLElement;
   constructor(private router: Router, private el: ElementRef) {}
 
-  public isScrollingDown: boolean = false;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const contentP = this.el.nativeElement.querySelector('.fixed-p');
-    const contentPPosition = contentP.getBoundingClientRect().bottom;
-    if (contentPPosition < 0) {
-      this.isFixed = true;
-      this.isScrollingDown = true;
-    } else if (
-      contentPPosition >=
-      1.1 * parseFloat(getComputedStyle(document.documentElement).fontSize)
-    ) {
-      this.isFixed = false;
-      this.isScrollingDown = false;
-    }
-  }
-
-  divState = 'small';
-
-  animateDiv() {
-    this.divState = this.divState === 'small' ? 'large' : 'small';
-  }
 }
