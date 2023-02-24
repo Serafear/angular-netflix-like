@@ -1,0 +1,11 @@
+.full-page-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-password-container {
+  display: flex;
+  flex-direction: column;
+}
