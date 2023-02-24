@@ -5,14 +5,14 @@ import { TopBandComponent } from '../Wtkm-topBand/top-band.component';
 
 
 @Component({
-  selector: 'app-pageThree',
-  templateUrl: './PageThree.component.html',
-  styleUrls: ['./PageThree.component.css'],
+  selector: 'app-pageFour',
+  templateUrl: './PageFour.component.html',
+  styleUrls: ['./PageFour.component.css'],
   standalone: true,
   imports: [RouterModule, WtkmFooterComponent, TopBandComponent],
 
 })
-export class PageThreeComponent implements OnInit {
+export class PageFourComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
