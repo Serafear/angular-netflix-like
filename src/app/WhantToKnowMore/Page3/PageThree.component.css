@@ -1,0 +1,51 @@
+.full-page-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc-bgd-img {
+  background: url("https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png") no-repeat 50% 50%;
+  background-size: 28%;
+  width: 50%;
+  height: 20rem;
+  margin-bottom: -6rem;
+}
+
+.stages-title-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stages-nbr-2 {
+  text-align: center;
+  margin-bottom: -1rem;
+}
+.nbr-2 {
+  font-weight: 600;
+}
+.page-2-title {
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: -0.5rem;
+}
+.small-text-p3 {
+  font-weight: 200;
+  font-size: 1.3rem;
+  width: 80%;
+  text-align: center;
+}
+
+.nextbtn {
+  background-color: red;
+  color: white;
+  font-size: x-large;
+  padding: 1rem 9rem 1rem 9rem;
+  border: none;
+  margin-bottom: 7rem;
+  cursor: pointer;
+}
