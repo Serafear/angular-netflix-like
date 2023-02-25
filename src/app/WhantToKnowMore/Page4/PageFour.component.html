@@ -9,19 +9,30 @@
       Plus que quelques étapes et c'est fini ! Plus rien à remplir. 
     </h2>
   </div>
-  <form class="email-password-container">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-  
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-  
-    <label>
-      <input type="checkbox" name="publicity" value="yes">
-      Oui, envoyez-moi les offres spéciales de Netflix par e-mail.
-    </label>
-  
-    <button type="submit" class="next-btn">Suivant</button>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Email:</label>
+      <input type="email" formControlName="email">
+      <div *ngIf="loginForm.get('email').invalid && (loginForm.get('email').dirty || loginForm.get('email').touched)">
+        <div *ngIf="loginForm.get('email').errors.required">Email is required.</div>
+        <div *ngIf="loginForm.get('email').errors.email">Invalid email format.</div>
+      </div>
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" formControlName="password">
+      <div *ngIf="loginForm.get('password').invalid && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+        <div *ngIf="loginForm.get('password').errors.required">Password is required.</div>
+        <div *ngIf="loginForm.get('password').errors.minlength">Password must be at least 6 characters.</div>
+      </div>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" formControlName="morePublicity">
+        Receive more publicity
+      </label>
+    </div>
+    <button type="submit" [disabled]="!loginForm.valid">Login</button>
   </form>
 </div>
 <app-wtkm-footer></app-wtkm-footer>
