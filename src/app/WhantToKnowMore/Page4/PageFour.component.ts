@@ -3,6 +3,8 @@ import { Router, RouterModule } from '@angular/router';
 import { WtkmFooterComponent } from '../Wtkm-Footer/footer.component';
 import { TopBandComponent } from '../Wtkm-topBand/top-band.component';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
@@ -10,7 +12,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './PageFour.component.html',
   styleUrls: ['./PageFour.component.css'],
   standalone: true,
-  imports: [RouterModule, WtkmFooterComponent, TopBandComponent],
+  imports: [RouterModule, WtkmFooterComponent, TopBandComponent, CommonModule, FormsModule, ReactiveFormsModule],
 
 })
 export class PageFourComponent implements OnInit {
