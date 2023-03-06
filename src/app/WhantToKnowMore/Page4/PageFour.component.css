@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 /*.stages-title-container {
@@ -31,8 +30,10 @@
 }
 
 .input-form {
-  width: 60%;
   background-color: red;
+}
+.mail {
+  
 }
 
 .email-password-container {

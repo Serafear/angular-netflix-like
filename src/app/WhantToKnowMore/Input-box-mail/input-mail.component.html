@@ -1,0 +1,19 @@
+<form [formGroup]="form" class="input-form">
+<div class="input-container">
+  <input
+    type="text"
+    (focus)="onFocus($event)"
+    (blur)="onBlur($event)"
+    (input)="onInput($event)"
+    formControlName="email"
+    id="emailInput"
+  />
+  <label for="emailInput">Email</label>
+</div>
+</form>
+<div *ngIf="email.value && email.invalid && (email.dirty || email.touched)">
+<!--<div *ngIf="email.errors.required">
+Email required
+</div>  if i want the error to show even if the box is empty-->
+<div *ngIf="email.errors.email">Enter a valid email</div>
+</div>
