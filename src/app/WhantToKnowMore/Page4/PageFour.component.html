@@ -4,31 +4,51 @@
     <p class="stages-nbr-2">
       Étape <span class="nbr-2">2</span> sur <span class="nbr-2">3</span>
     </p>
-    <h1 class="page-2-title">Créez un mot de passe pour activer votre abonnement</h1>
+    <h1 class="page-2-title">
+      Créez un mot de passe pour activer votre abonnement
+    </h1>
     <h2 class="small-text-p3">
-      Plus que quelques étapes et c'est fini ! Plus rien à remplir. 
+      Plus que quelques étapes et c'est fini ! Plus rien à remplir.
     </h2>
   </div>
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="input-form">
+    <div class="mail">
       <label>Email:</label>
-      <input type="email" formControlName="email">
-      <div *ngIf="loginForm.get('email').invalid && (loginForm.get('email').dirty || loginForm.get('email').touched)">
-        <div *ngIf="loginForm.get('email').errors.required">Email is required.</div>
-        <div *ngIf="loginForm.get('email').errors.email">Invalid email format.</div>
+      <input type="email" formControlName="email" />
+      <div
+        *ngIf="
+          loginForm.get('email').invalid &&
+          (loginForm.get('email').dirty || loginForm.get('email').touched)
+        "
+      >
+        <div *ngIf="loginForm.get('email').errors.required">
+          Email is required.
+        </div>
+        <div *ngIf="loginForm.get('email').errors.email">
+          Invalid email format.
+        </div>
       </div>
     </div>
-    <div>
+    <div class="password">
       <label>Password:</label>
-      <input type="password" formControlName="password">
-      <div *ngIf="loginForm.get('password').invalid && (loginForm.get('password').dirty || loginForm.get('password').touched)">
-        <div *ngIf="loginForm.get('password').errors.required">Password is required.</div>
-        <div *ngIf="loginForm.get('password').errors.minlength">Password must be at least 6 characters.</div>
+      <input type="password" formControlName="password" />
+      <div
+        *ngIf="
+          loginForm.get('password').invalid &&
+          (loginForm.get('password').dirty || loginForm.get('password').touched)
+        "
+      >
+        <div *ngIf="loginForm.get('password').errors.required">
+          Password is required.
+        </div>
+        <div *ngIf="loginForm.get('password').errors.minlength">
+          Password must be at least 6 characters.
+        </div>
       </div>
     </div>
-    <div>
+    <div class="checkbox">
       <label>
-        <input type="checkbox" formControlName="morePublicity">
+        <input type="checkbox" formControlName="morePublicity" />
         Receive more publicity
       </label>
     </div>
