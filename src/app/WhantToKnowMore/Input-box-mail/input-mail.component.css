@@ -3,8 +3,7 @@
 }
 
 #emailInput {
-  background-color: #333;
-  background: rgba(0, 0, 0, 0.4);
+  background-color: white;
   
 }
 
@@ -12,11 +11,9 @@ input[type='text'] {
   padding: 10px;
   font-size: 16px;
   width: 100%;
-  border: 2px solid #ddd;
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border: 1px solid black;
   transition: all 0.3s;
-  color: white;
+  color: black;
 }
 
 input[type='text']:focus {
@@ -51,7 +48,7 @@ label {
   position: absolute;
   bottom: 10px;
   padding-left: 12px;
-  color: #ddd;
+  color: black;
   cursor: text;
   pointer-events: none;
 }
@@ -59,7 +56,7 @@ label {
 label.focused {
   transform: translateY(-18px);
   font-size: 10px;
-  color: #ddd;
+  color: black;
 }
 
 .error {
@@ -79,17 +76,6 @@ label.focused {
   justify-content: center;
   align-items: center;
   width: 32rem;
-}
-.input-btn {
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  font-size: larger;
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  height: 2.648rem;
-  width: 12rem;
-  border: 2px solid red;
 }
 .input-container {
   width: 20rem;
