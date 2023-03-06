@@ -5,6 +5,21 @@
   align-items: center;
 }
 
+/*.stages-title-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}*/
+.stages-nbr-2 {
+  width: 50%;
+  background-color: red;
+}
+.nbr-2 {
+  font-weight: 600;
+}
+
 .email-password-container {
   display: flex;
   flex-direction: column;
