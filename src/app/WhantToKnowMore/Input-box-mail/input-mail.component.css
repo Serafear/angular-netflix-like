@@ -8,7 +8,7 @@
 }
 
 input[type='text'] {
-  padding: 10px;
+  padding: 15px;
   font-size: 16px;
   width: 100%;
   border: 1px solid black;
@@ -17,7 +17,7 @@ input[type='text'] {
 }
 
 input[type='text']:focus {
-  border: 2px solid #4285f4;
+  border: 1px solid #4285f4;
   outline: none;
 }
 
@@ -29,24 +29,24 @@ input[type='text'].ng-invalid.ng-touched {
 }*/
 
 .ng-invalid.ng-value:not(form) {
-  border-bottom: 2px solid red;
+  border-bottom: 1px solid red;
 }
 input[type='text'].ng-invalid.ng-value {
-  border-bottom: 2px solid red;
+  border-bottom: 1px solid red;
 }
 
 input.ng-valid.ng-touched {
   border-color: green;
 }
 input[type='text'].ng-valid {
-  border: 2px solid green;
+  border: 1px solid green;
 }
 
 label {
   font-size: 14px;
   transition: all 0.3s;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   padding-left: 12px;
   color: black;
   cursor: text;
@@ -54,9 +54,10 @@ label {
 }
 
 label.focused {
-  transform: translateY(-18px);
+  transform: translateY(-20px);
   font-size: 10px;
   color: black;
+  margin-left: 2px;
 }
 
 .error {
