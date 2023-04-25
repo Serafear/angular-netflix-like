@@ -3,40 +3,90 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
-/*.stages-title-container {
+.stages-title-container {
+  width: 20%;
   display: flex;
   flex-direction: column;
-  width: 50%;
   justify-content: center;
   align-items: center;
-}*/
-.stages-nbr-2 {
-  width: 50%;
-  background-color: red;
 }
+
+.stages-nbr-2 {
+  text-align: center;
+  margin-bottom: -1rem;
+}
+
 .nbr-2 {
   font-weight: 600;
 }
+
 .page-2-title {
-  width: 60%;
-  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: -0.5rem;
 }
+
 .small-text-p3 {
-  width: 60%;
   font-weight: 200;
-  color: #333333;
+  font-size: 1.3rem;
+  width: 80%;
+  text-align: center;
 }
 
 .input-form {
-  background-color: red;
-}
-.mail {
-  
-}
-
-.email-password-container {
   display: flex;
   flex-direction: column;
+  width: 20%;
+  margin-bottom: 1rem;
+}
+
+.username,
+.mail,
+.password,
+.address,
+.zip,
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: red;
+  color: white;
+  font-size: x-large;
+  padding: 1rem 9rem 1rem 9rem;
+  border: none;
+  cursor: pointer;
+}
+
+.error-messages {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+
+app-input-custom {
+  --input-background-color: white;
+  --input-type-background-color: white; 
 }

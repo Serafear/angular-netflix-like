@@ -1,0 +1,21 @@
+<div class="input-container">
+    <input #inputBoxCustom
+      [type]="inputType"
+      [formControlName]="formControlName"
+      (focus)="onFocus($event)"
+      (blur)="onBlur($event)"
+      (input)="onInput($event)"
+      id="inputBoxCustom"
+      [ngClass]="inputClasses()"
+    />
+    <label for="inputBoxCustom"><ng-content select=".label"></ng-content></label>
+    <!-- Add the error messages here -->
+    <div *ngIf="errorMessages" class="error-messages">
+      <ng-container *ngFor="let error of errorMessages">
+        <div *ngIf="form.get(formControlName).hasError(error.type)">
+          {{error.message}}
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  

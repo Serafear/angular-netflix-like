@@ -1,0 +1,16 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+      "outDir": "../out-tsc/e2e",
+      "types": [
+        "jasmine",
+        "jasminewd2",
+        "node"
+      ]
+    },
+    "include": [
+      "**/*.e2e-spec.ts",
+      "**/*.po.ts"
+    ]
+  }
+  

@@ -12,49 +12,40 @@
     </h2>
   </div>
 
-  <app-input-box-mail></app-input-box-mail>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="input-form">
-    <div class="mail">
-      <label>Email:</label>
-      <input type="email" formControlName="email" />
-      <div
-        *ngIf="
-          loginForm.get('email').invalid &&
-          (loginForm.get('email').dirty || loginForm.get('email').touched)
-        "
-      >
-        <div *ngIf="loginForm.get('email').errors.required">
-          Email is required.
-        </div>
-        <div *ngIf="loginForm.get('email').errors.email">
-          Invalid email format.
-        </div>
-      </div>
-    </div>
-    <div class="password">
-      <label>Password:</label>
-      <input type="password" formControlName="password" />
-      <div
-        *ngIf="
-          loginForm.get('password').invalid &&
-          (loginForm.get('password').dirty || loginForm.get('password').touched)
-        "
-      >
-        <div *ngIf="loginForm.get('password').errors.required">
-          Password is required.
-        </div>
-        <div *ngIf="loginForm.get('password').errors.minlength">
-          Password must be at least 6 characters.
-        </div>
-      </div>
-    </div>
+    <!-- Username -->
+    <app-input-custom [inputType]="'text'" [formControlName]="'username'" [form]="loginForm" [errorMessages]="loginForm.get('username').errors">
+  <span class="label">Nom utilisateur</span>
+</app-input-custom>
+
+    <!--Email-->
+    <app-input-custom [inputType]="'email'" [formControlName]="'email'" [form]="loginForm">
+      <span class="label">Email</span>
+    </app-input-custom>
+    
+    <!--password-->
+    <app-input-custom [inputType]="'password'" [formControlName]="'password'" [form]="loginForm">
+      <span class="label">Mot de passe</span>
+    </app-input-custom>
+    
+    <!-- Address -->
+    <app-input-custom [inputType]="'text'" [formControlName]="'address'" [form]="loginForm">
+      <span class="label">Adresse</span>
+    </app-input-custom>
+
+    <!-- Zip -->
+    <app-input-custom [inputType]="'text'" [formControlName]="'zipCode'" [form]="loginForm">
+      <span class="label">Zip code</span>
+    </app-input-custom>
+
+    <!--checkbox-->
     <div class="checkbox">
       <label>
-        <input type="checkbox" formControlName="morePublicity" />
-        Receive more publicity
+        <input type="checkbox" formControlName="morePublicity"/>
+        Recevoir plus de publicité
       </label>
     </div>
-    <button type="submit" [disabled]="!loginForm.valid">Login</button>
+    <button type="submit" [disabled]="!loginForm.valid">Inscription</button>
   </form>
 </div>
 <app-wtkm-footer></app-wtkm-footer>
